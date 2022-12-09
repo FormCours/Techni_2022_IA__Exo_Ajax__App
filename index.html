@@ -4,15 +4,20 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/67e676c181.js" crossorigin="anonymous"></script>
     <title>Document</title>
 </head>
 <body>
     <header>
-        <h4 id="userName"></h4>
+        <span>Exo</span>
+        <div id="logout">
+            <span id="userName"></span>
+            <button id="disconnect"><i class="fas fa-sign-out-alt"></i></button>
+        </div>
     </header>
 
     <div id="login">
-        <form action="">
+        <form action="" id="connect-form">
             <label for="userName-form">Username : </label>
             <input type="text" id="userName-form">
             <button type="submit">Connexion</button>
@@ -21,8 +26,12 @@
 
     <div id="chan">
         <h2>Channel :</h2>
+        <section id="chan-list"></section>
     </div>
     
-    <div id="chat"></div>
+    <div id="chat">
+        <h2 id="chat-title"></h2>
+        <section id="chat-list"></section>
+    </div>
 </body>
 </html>
