@@ -6,12 +6,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="https://kit.fontawesome.com/67e676c181.js" crossorigin="anonymous"></script>
     <script defer src="scripts/script.js"></script>
+    <link rel="stylesheet" href="style.css">
     <title>Document</title>
 </head>
 <body>
     <header>
         <span>Exo</span>
-        <div id="logout">
+        <div id="logout" class="cache">
             <span id="userName"></span>
             <button id="disconnect"><i class="fas fa-sign-out-alt"></i></button>
         </div>
@@ -20,20 +21,25 @@
     <div id="login">
         <form action="" id="connect-form">
             <label for="userName-form">Username : </label>
-            <input type="text" id="userName-form">
-            <button type="submit">Connexion</button>
+            <input type="text" id="userName-form" required>
+            <button type="submit" >Connexion</button>
         </form>
     </div>
 
-    <div id="chan">
+    <div id="chan" class="cache">
         <h2>Channel :</h2>
         <section id="chan-list"></section>
     </div>
     
-    <div id="chat">
+    <div id="chat" class="cache">
         <h2 id="chat-title"></h2>
-        <button>Retour</button>
+        <button id="back">Retour</button>
         <section id="chat-list"></section>
+        <form action="" id="send-message">
+            <label>Envoyez un message :</label>
+            <input type="text" id="get-message">
+            <button type="submit">Ajouter</button>
+        </form>
     </div>
 </body>
 </html>
